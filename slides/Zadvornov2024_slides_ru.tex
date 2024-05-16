@@ -122,7 +122,7 @@
 
 
 %----------------------------------------------------------------------------------------------------------
-\begin{frame}{Постановка задачи}
+
 Пусть $T = \{T^k\}_{k=1}^K$ -- множество уникальных топиков, где $K$ -- общее число различных топиков. Имеется временной ряд $\{t_i\}_{i=1}^N$, соответствующий последовательности дат, и на каждую дату $t_i$ приходится набор $\{T_{ij}\}_{j=1}^{M_i}$ популярных топиков, где $M_i$ -- число популярных топиков в день $t_i$. Каждый $T_{ij} \in T$ представляет собой одно слово или фразу длиной до 4 слов.
 
 
@@ -130,6 +130,33 @@
 гается следующий алгоритм:
 \end{frame}
 %----------------------------------------------------------------------------------------------------------
+
+\begin{frame}{Визуализация данных}
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Time} & \textbf{Source} & \textbf{Topic}           \\ \hline
+2024-03-03    & Twitter         & Rashford                 \\ \hline
+2024-03-03    & Twitter         & \#sundayvibes            \\ \hline
+2024-03-03    & Twitter         & Xavier Worthy            \\ \hline
+2024-03-03    & Twitter         & Foden                    \\ \hline
+2024-03-03    & Twitter         & \#UFCVegas87             \\ \hline
+...           & ...             & ...                      \\ \hline
+2017-03-18    & Google          & Robert Osborne           \\ \hline
+2017-03-18    & Google          & Alejandra Campoverdi     \\ \hline
+2017-03-18    & Google          & Drake More Life          \\ \hline
+2017-03-18    & Google          & Drake More Life Download \\ \hline
+2017-03-18    & Google          & Costco Travel            \\ \hline
+\end{tabular}
+\caption{Sample of data}
+\label{tab:timefromtime}
+\end{table}
+
+
+\end{frame}
+% ----------------------------------------------
+
 \begin{frame}{Решение}
 Ключевые элементы решения:
 \centering
